@@ -1,5 +1,6 @@
 package com.AngelB6.miprimerapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -15,6 +16,8 @@ class MainActivity : AppCompatActivity() {
         botonSaludar.setOnClickListener{
             var nombreRecogido = nombre.text.toString()
             Toast.makeText(this, "Bienvenido ${nombreRecogido} a mi APP!", Toast.LENGTH_LONG).show()
+            val intento = Intent(this, Calculadora::class.java)
+            startActivity(intento)
         }
     }
 }
