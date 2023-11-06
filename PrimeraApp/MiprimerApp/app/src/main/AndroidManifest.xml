@@ -13,6 +13,12 @@
         android:theme="@style/Theme.MiprimerApp"
         tools:targetApi="31">
         <activity
+            android:name=".Saldo"
+            android:exported="false" />
+        <activity
+            android:name=".MenuNequi"
+            android:exported="false" />
+        <activity
             android:name=".Libre"
             android:exported="false" />
         <activity

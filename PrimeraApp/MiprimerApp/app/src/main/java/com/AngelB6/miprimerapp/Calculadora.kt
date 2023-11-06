@@ -14,15 +14,37 @@ class Calculadora : AppCompatActivity() {
 
         val num1 = findViewById<EditText>(R.id.editTextTextNum1)
         val num2 = findViewById<EditText>(R.id.editTextTextNum2)
-        val textResultado = findViewById<TextView>(R.id.textViewResultado)
-        val botonSuma = findViewById<Button>(R.id.buttonSumar)
 
-        botonSuma.setOnClickListener(){
+        val textResultado = findViewById<TextView>(R.id.textViewResultado)
+        val buttonSumar = findViewById<Button>(R.id.buttonSumar)
+        val buttonRestar = findViewById<Button>(R.id.buttonRestar)
+        val buttonMultiplicar = findViewById<Button>(R.id.buttonMultiplicar)
+        val buttonDividir = findViewById<Button>(R.id.buttonDividir)
+        val buttonVolver = findViewById<Button>(R.id.buttonVolver)
+
+        buttonSumar.setOnClickListener{
             var resultado = num1.text.toString().toDouble() + num2.text.toString().toDouble()
-//            textResultado.text = "Resultado"
             textResultado.setText("Resultado: ${resultado.toString()}")
-            val intento = Intent(this, Calculadora::class.java)
-            startActivity(intento)
+        }
+
+        buttonRestar.setOnClickListener{
+            var resultado = num1.text.toString().toDouble() - num2.text.toString().toDouble()
+            textResultado.setText("Resultado: ${resultado.toString()}")
+        }
+
+        buttonMultiplicar.setOnClickListener{
+            var resultado = num1.text.toString().toDouble() * num2.text.toString().toDouble()
+            textResultado.setText("Resultado: ${resultado.toString()}")
+        }
+
+        buttonDividir.setOnClickListener{
+            var resultado = num1.text.toString().toDouble() / num2.text.toString().toDouble()
+            textResultado.setText("Resultado: ${resultado.toString()}")
+        }
+
+        buttonVolver.setOnClickListener{
+            val volver = Intent(this, Menu::class.java)
+            startActivity(volver)
         }
     }
 }
