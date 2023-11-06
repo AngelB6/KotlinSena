@@ -11,13 +11,15 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val nombre = findViewById<EditText>(R.id.editTextNombre)
-        val botonSaludar = findViewById<Button>(R.id.Saludar)
-        botonSaludar.setOnClickListener{
-            var nombreRecogido = nombre.text.toString()
+
+        val editTextNombre = findViewById<EditText>(R.id.editTextNombre)
+        val buttonSaludar = findViewById<Button>(R.id.buttonSaludar)
+
+        buttonSaludar.setOnClickListener{
+            var nombreRecogido = editTextNombre.text.toString()
             Toast.makeText(this, "Bienvenido ${nombreRecogido} a mi APP!", Toast.LENGTH_LONG).show()
-            val intento = Intent(this, Calculadora::class.java)
-            startActivity(intento)
+            val menu = Intent(this, Menu::class.java)
+            startActivity(menu)
         }
     }
 }
