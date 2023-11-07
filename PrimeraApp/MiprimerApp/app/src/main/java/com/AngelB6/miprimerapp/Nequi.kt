@@ -12,7 +12,7 @@ class Nequi : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_nequi)
 
-        var numerosReg = mutableListOf<Long>(3112310715, 3138648830)
+        var numerosReg = mutableListOf<Long>(3112310715, 3138648830, 3226621354)
 
         val editTextNum = findViewById<EditText>(R.id.editTextTextNumero)
 
@@ -23,11 +23,8 @@ class Nequi : AppCompatActivity() {
             val numero = editTextNum.text.toString().toLong()
             if (numerosReg.contains(numero)){
                 Toast.makeText(this, "Usted ha iniciado sesion correctamente", Toast.LENGTH_LONG).show()
-                val ingreso = Intent(this, MenuNequi::class.java)
+                val ingreso = Intent(this, Saldo::class.java)
                 startActivity(ingreso)
-//                Enrutaje correcto el anterior esta de manera provisional
-//                val ingreso = Intent(this, Saldo::class.java)
-//                startActivity(ingreso)
             }else{
                 Toast.makeText(this, "Los datos ingresados no son validos", Toast.LENGTH_LONG).show()
             }
