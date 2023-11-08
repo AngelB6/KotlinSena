@@ -16,8 +16,8 @@ class Nequi : AppCompatActivity() {
 
         val editTextNum = findViewById<EditText>(R.id.editTextTextNumero)
 
-        val buttonVolver = findViewById<Button>(R.id.buttonVolver)
         val buttonIngresar = findViewById<Button>(R.id.buttonIngresar)
+        val buttonVolver = findViewById<Button>(R.id.buttonVolver)
 
         buttonIngresar.setOnClickListener {
             val numero = editTextNum.text.toString().toLong()

@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import com.AngelB6.miprimerapp.AuxiliarSaldo
 
 class Saldo : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,9 +19,11 @@ class Saldo : AppCompatActivity() {
 
         buttonRecarga.setOnClickListener{
             var saldoFinal = editTextSaldo.text.toString().toLong()
+            AuxiliarSaldo.nuevoSaldo(saldoFinal)
             if (saldoFinal != null){
                 Toast.makeText(this, "Saldo recargado con exito",Toast.LENGTH_LONG).show()
                 val ingresoMenu = Intent(this, MenuNequi::class.java)
+                ingresoMenu.putExtra("variable", saldoFinal)
                 startActivity(ingresoMenu)
             }else{
                 Toast.makeText(this, "Ingrese un valor valido", Toast.LENGTH_LONG).show()
