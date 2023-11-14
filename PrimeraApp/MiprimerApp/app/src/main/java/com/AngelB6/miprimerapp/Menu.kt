@@ -4,7 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import android.widget.Toast
 
 class Menu : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,8 +26,8 @@ class Menu : AppCompatActivity() {
         }
 
         buttonLibre.setOnClickListener{
-            val libre = Intent(this, Libre::class.java)
-            startActivity(libre)
+            val adivinaNum = Intent(this, AdivinaNum::class.java)
+            startActivity(adivinaNum)
         }
 
         buttonVolver.setOnClickListener{

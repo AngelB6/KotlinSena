@@ -31,7 +31,7 @@
             android:name=".MenuNequi"
             android:exported="false" />
         <activity
-            android:name=".Libre"
+            android:name=".AdivinaNum"
             android:exported="false" />
         <activity
             android:name=".Nequi"
