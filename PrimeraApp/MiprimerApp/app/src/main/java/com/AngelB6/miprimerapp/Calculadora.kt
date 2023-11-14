@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 
 class Calculadora : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,23 +24,51 @@ class Calculadora : AppCompatActivity() {
         val buttonVolver = findViewById<Button>(R.id.buttonVolver)
 
         buttonSumar.setOnClickListener{
-            var resultado = num1.text.toString().toDouble() + num2.text.toString().toDouble()
-            textResultado.setText("Resultado: ${resultado.toString()}")
+            val numero1 = num1.text.toString()
+            val numero2 = num2.text.toString()
+
+            if (numero1 == "" || numero2 == ""){
+                Toast.makeText(this, "El valor no puede estar vacio", Toast.LENGTH_LONG).show()
+            }else {
+                var resultado = numero1.toDouble() + numero2.toDouble()
+                textResultado.setText("Resultado: ${resultado.toString()}")
+            }
         }
 
         buttonRestar.setOnClickListener{
-            var resultado = num1.text.toString().toDouble() - num2.text.toString().toDouble()
-            textResultado.setText("Resultado: ${resultado.toString()}")
+            val numero1 = num1.text.toString()
+            val numero2 = num2.text.toString()
+
+            if (numero1 == "" || numero2 == ""){
+                Toast.makeText(this, "El valor no puede estar vacio", Toast.LENGTH_LONG).show()
+            }else {
+                var resultado = numero1.toDouble() - numero2.toDouble()
+                textResultado.setText("Resultado: ${resultado.toString()}")
+            }
         }
 
         buttonMultiplicar.setOnClickListener{
-            var resultado = num1.text.toString().toDouble() * num2.text.toString().toDouble()
-            textResultado.setText("Resultado: ${resultado.toString()}")
+            val numero1 = num1.text.toString()
+            val numero2 = num2.text.toString()
+
+            if (numero1 == "" || numero2 == ""){
+                Toast.makeText(this, "El valor no puede estar vacio", Toast.LENGTH_LONG).show()
+            }else {
+                var resultado = numero1.toDouble() * numero2.toDouble()
+                textResultado.setText("Resultado: ${resultado.toString()}")
+            }
         }
 
         buttonDividir.setOnClickListener{
-            var resultado = num1.text.toString().toDouble() / num2.text.toString().toDouble()
-            textResultado.setText("Resultado: ${resultado.toString()}")
+            val numero1 = num1.text.toString()
+            val numero2 = num2.text.toString()
+
+            if (numero1 == "" || numero2 == ""){
+                Toast.makeText(this, "El valor no puede estar vacio", Toast.LENGTH_LONG).show()
+            }else {
+                var resultado = numero1.toDouble() / numero2.toDouble()
+                textResultado.setText("Resultado: ${resultado.toString()}")
+            }
         }
 
         buttonVolver.setOnClickListener{

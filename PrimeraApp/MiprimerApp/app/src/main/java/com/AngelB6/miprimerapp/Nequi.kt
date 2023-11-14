@@ -20,13 +20,22 @@ class Nequi : AppCompatActivity() {
         val buttonVolver = findViewById<Button>(R.id.buttonVolver)
 
         buttonIngresar.setOnClickListener {
-            val numero = editTextNum.text.toString().toLong()
-            if (numerosReg.contains(numero)){
-                Toast.makeText(this, "Usted ha iniciado sesion correctamente", Toast.LENGTH_LONG).show()
-                val ingreso = Intent(this, Saldo::class.java)
-                startActivity(ingreso)
+            val numeroVacio = editTextNum.text.toString()
+            if (numeroVacio == "") {
+                Toast.makeText(this, "Debe ingresar un numero de telefono", Toast.LENGTH_LONG).show()
             }else{
-                Toast.makeText(this, "Los datos ingresados no son validos", Toast.LENGTH_LONG).show()
+                val numero = numeroVacio.toLong()
+                if (numerosReg.contains(numero)) {
+                    Toast.makeText(
+                        this,
+                        "Usted ha iniciado sesion correctamente",
+                        Toast.LENGTH_LONG
+                    ).show()
+                    val ingreso = Intent(this, Saldo::class.java)
+                    startActivity(ingreso)
+                }else{
+                    Toast.makeText(this, "Los datos ingresados no son validos", Toast.LENGTH_LONG).show()
+                }
             }
         }
 

@@ -14,12 +14,18 @@ class MainActivity : AppCompatActivity() {
 
         val editTextNombre = findViewById<EditText>(R.id.editTextNombre)
         val buttonSaludar = findViewById<Button>(R.id.buttonSaludar)
+        val buttonSalir = findViewById<Button>(R.id.buttonSalir)
 
         buttonSaludar.setOnClickListener{
             var nombreRecogido = editTextNombre.text.toString()
             Toast.makeText(this, "Bienvenido ${nombreRecogido} a mi APP!", Toast.LENGTH_LONG).show()
             val menu = Intent(this, Menu::class.java)
             startActivity(menu)
+        }
+
+        buttonSalir.setOnClickListener{
+            finishAffinity()
+            Toast.makeText(this, "Hasta luego:))", Toast.LENGTH_LONG).show()
         }
     }
 }

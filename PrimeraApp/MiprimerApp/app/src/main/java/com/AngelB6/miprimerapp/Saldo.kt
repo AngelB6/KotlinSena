@@ -31,14 +31,8 @@ class Saldo : AppCompatActivity() {
         }
 
         buttonSalir.setOnClickListener{
-            var saldoFinal = editTextSaldo.text.toString().toLong()
-            if (saldoFinal != null){
-                val salir = Intent(this, Salir::class.java)
-                startActivity(salir)
-            }else{
-                val volver = Intent(this, Nequi::class.java)
-                startActivity(volver)
-            }
+            val salir = Intent(this, Salir::class.java)
+            startActivity(salir)
         }
     }
 }
