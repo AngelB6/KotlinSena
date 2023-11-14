@@ -16,8 +16,9 @@ class AdivinaNum : AppCompatActivity() {
         val buttonAdivinar = findViewById<Button>(R.id.buttonResultado)
         val buttonVolver = findViewById<Button>(R.id.buttonVolver)
 
+val numeroGenerado = (1..20).random()
+
         buttonAdivinar.setOnClickListener{
-            val numeroGenerado = (1..20).random()
             val numeroFinal = numeroIng.text.toString().toInt()
             println(numeroGenerado)
             if (numeroFinal < numeroGenerado){
