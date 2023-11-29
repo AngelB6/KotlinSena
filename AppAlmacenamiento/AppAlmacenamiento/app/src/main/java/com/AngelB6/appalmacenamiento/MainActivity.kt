@@ -1,6 +1,7 @@
 package com.AngelB6.appalmacenamiento
 
 import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -16,6 +17,7 @@ class MainActivity : AppCompatActivity() {
         val datos = findViewById<EditText>(R.id.editTextTextMultiLineDatos)
         val consultar = findViewById<Button>(R.id.buttonConsultar)
         val guardar = findViewById<Button>(R.id.buttonGuardar)
+        val buttonNotas = findViewById<Button>(R.id.buttonNotas)
 //        Preferences se utiliza para almacenar un cantidad de datos no muy extensa
         val preferencias = getSharedPreferences("datos", Context.MODE_PRIVATE)
 
@@ -37,6 +39,11 @@ class MainActivity : AppCompatActivity() {
                     datos.setText(datosConsultados)
                 }
             }
+        }
+
+        buttonNotas.setOnClickListener{
+            val intento = Intent(this, MainActivityNotas::class.java)
+            startActivity(intento)
         }
     }
 }

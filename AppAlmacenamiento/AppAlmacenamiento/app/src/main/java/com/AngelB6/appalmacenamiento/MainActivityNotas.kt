@@ -1,6 +1,7 @@
 package com.AngelB6.appalmacenamiento
 
 import android.app.Activity
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -18,6 +19,7 @@ class MainActivityNotas : AppCompatActivity() {
 
         val notas = findViewById<EditText>(R.id.editTextTextMultiLineNota)
         val botonGuardar = findViewById<Button>(R.id.buttonGuardarNota)
+        val buttonVolver = findViewById<Button>(R.id.buttonVolver)
 
         if (fileList().contains("notas.txt")) {
             try {
@@ -46,6 +48,11 @@ class MainActivityNotas : AppCompatActivity() {
             }catch (e: IOException){
                 Toast.makeText(this, "Notas registradas",Toast.LENGTH_LONG).show()
             }
+        }
+
+        buttonVolver.setOnClickListener{
+            val intento = Intent(this, MainActivity::class.java)
+            startActivity(intento)
         }
     }
 }
