@@ -12,40 +12,56 @@
 
     <Button
         android:id="@+id/buttonSaludar"
-        android:layout_width="wrap_content"
+        android:layout_width="140dp"
         android:layout_height="wrap_content"
         android:backgroundTint="#3D5869"
+        android:fontFamily="serif-monospace"
         android:gravity="center"
         android:text="Saludar"
         android:textColor="@color/white"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.343"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewBienvenida"
-        app:layout_constraintVertical_bias="0.545" />
+        app:layout_constraintVertical_bias="0.439" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="32dp"
+        android:layout_height="27dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.374"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.588"
+        app:srcCompat="@drawable/saludo" />
 
     <TextView
         android:id="@+id/textViewBienvenida"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="serif-monospace"
         android:shadowRadius="4"
         android:text="Bienvenido A Mi APP"
         android:textColor="#3D5869"
-        android:textSize="35dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.528"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.206" />
+        app:layout_constraintVertical_bias="0.216" />
 
     <EditText
         android:id="@+id/editTextNombre"
-        android:layout_width="wrap_content"
+        android:layout_width="210dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Ingrese nombre"
+        android:fontFamily="serif-monospace"
+        android:hint="Ingrese su nombre..."
         android:inputType="text"
         android:outlineAmbientShadowColor="#000000"
         android:outlineSpotShadowColor="#000000"
@@ -53,37 +69,49 @@
         android:textColorHint="#3D5869"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.409"
-        app:layout_constraintStart_toEndOf="@+id/textViewNombre"
-        app:layout_constraintTop_toBottomOf="@+id/textViewBienvenida"
-        app:layout_constraintVertical_bias="0.217" />
-
-    <TextView
-        android:id="@+id/textViewNombre"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Nombre:"
-        android:textColor="#3D5869"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.434" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewBienvenida"
+        app:layout_constraintVertical_bias="0.316" />
 
     <Button
         android:id="@+id/buttonSalir"
-        android:layout_width="wrap_content"
+        android:layout_width="140dp"
         android:layout_height="wrap_content"
         android:backgroundTint="#3D5869"
+        android:fontFamily="serif-monospace"
         android:text="Salir"
         android:textColor="@color/white"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.693"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextNombre"
-        app:layout_constraintVertical_bias="0.342" />
+        app:layout_constraintVertical_bias="0.298" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="215dp"
+        android:layout_height="104dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.312"
+        app:srcCompat="@drawable/bienvenido" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="32dp"
+        android:layout_height="27dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.374"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.684"
+        app:srcCompat="@drawable/salir" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

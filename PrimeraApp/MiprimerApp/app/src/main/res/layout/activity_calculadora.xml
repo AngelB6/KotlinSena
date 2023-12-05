@@ -10,13 +10,14 @@
 
     <Button
         android:id="@+id/buttonVolver"
-        android:layout_width="wrap_content"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:backgroundTint="#3D5869"
+        android:fontFamily="serif-monospace"
         android:scrollbarSize="10dp"
         android:text="Volver"
         android:textColor="@color/white"
-        android:textSize="8dp"
+        android:textSize="12dp"
         app:iconSize="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -29,16 +30,17 @@
         android:id="@+id/textViewCalculadora"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="serif-monospace"
         android:shadowRadius="2"
         android:text="Calculadora"
         android:textColor="#3D5869"
-        android:textSize="35dp"
+        android:textSize="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.118" />
+        app:layout_constraintVertical_bias="0.173" />
 
     <EditText
         android:id="@+id/editTextTextNum1"
@@ -46,42 +48,45 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="45dp"
         android:ems="10"
-        android:hint="Ingrese Numero "
+        android:fontFamily="serif-monospace"
+        android:hint="Ingrese Numero..."
         android:inputType="number"
         android:textColor="#3D5869"
         android:textColorHint="#3D5869"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextNum2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.419"
         app:layout_constraintStart_toEndOf="@+id/textViewNum1"
         app:layout_constraintTop_toBottomOf="@+id/textViewCalculadora"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintVertical_bias="0.012" />
 
     <TextView
         android:id="@+id/textViewNum2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="392dp"
+        android:fontFamily="serif-monospace"
         android:text="Numero 2:"
         android:textColor="#3D5869"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.179"
+        app:layout_constraintHorizontal_bias="0.136"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewCalculadora"
-        app:layout_constraintVertical_bias="0.989" />
+        app:layout_constraintVertical_bias="0.875" />
 
     <TextView
         android:id="@+id/textViewNum1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="96dp"
+        android:layout_marginTop="56dp"
+        android:fontFamily="serif-monospace"
         android:text="Numero 1:"
         android:textColor="#3D5869"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.179"
+        app:layout_constraintHorizontal_bias="0.136"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewCalculadora" />
 
@@ -92,84 +97,165 @@
         android:layout_marginStart="18dp"
         android:layout_marginTop="45dp"
         android:ems="10"
-        android:hint="Ingrese Numero "
+        android:fontFamily="serif-monospace"
+        android:hint="Ingrese Numero..."
         android:inputType="number"
         android:textColor="#3D5869"
         android:textColorHint="#3D5869"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintHorizontal_bias="0.181"
         app:layout_constraintStart_toEndOf="@+id/textViewNum2"
         app:layout_constraintTop_toBottomOf="@+id/textViewCalculadora"
-        app:layout_constraintVertical_bias="0.249" />
+        app:layout_constraintVertical_bias="0.162" />
 
     <Button
         android:id="@+id/buttonSumar"
-        android:layout_width="wrap_content"
+        android:layout_width="130dp"
         android:layout_height="wrap_content"
         android:backgroundTint="#3D5869"
+        android:fontFamily="serif-monospace"
         android:text="Sumar"
         android:textColor="@color/white"
+        android:textSize="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.267"
+        app:layout_constraintHorizontal_bias="0.145"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewCalculadora"
-        app:layout_constraintVertical_bias="0.666" />
+        app:layout_constraintVertical_bias="0.574" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="21dp"
+        android:layout_height="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.123"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.667"
+        app:srcCompat="@drawable/sumar" />
 
     <Button
         android:id="@+id/buttonDividir"
-        android:layout_width="wrap_content"
+        android:layout_width="130dp"
         android:layout_height="wrap_content"
         android:backgroundTint="#3D5869"
+        android:fontFamily="serif-monospace"
         android:text="Dividir"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.744"
+        app:layout_constraintHorizontal_bias="0.871"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewCalculadora"
-        app:layout_constraintVertical_bias="0.8" />
+        app:layout_constraintVertical_bias="0.72" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="21dp"
+        android:layout_height="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.628"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.774"
+        app:srcCompat="@drawable/dividir" />
 
     <Button
         android:id="@+id/buttonMultiplicar"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:backgroundTint="#3D5869"
+        android:fontFamily="serif-monospace"
         android:text="Multiplicar"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.258"
+        app:layout_constraintHorizontal_bias="0.157"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewCalculadora"
-        app:layout_constraintVertical_bias="0.8" />
+        app:layout_constraintVertical_bias="0.72" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="21dp"
+        android:layout_height="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.774"
+        app:srcCompat="@drawable/multiplicar" />
 
     <Button
         android:id="@+id/buttonRestar"
-        android:layout_width="wrap_content"
+        android:layout_width="130dp"
         android:layout_height="wrap_content"
         android:backgroundTint="#3D5869"
+        android:fontFamily="serif-monospace"
         android:text="Restar"
         android:textColor="@color/white"
+        android:textSize="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.744"
+        app:layout_constraintHorizontal_bias="0.871"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewCalculadora"
-        app:layout_constraintVertical_bias="0.666" />
+        app:layout_constraintVertical_bias="0.574" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="21dp"
+        android:layout_height="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.628"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.667"
+        app:srcCompat="@drawable/restar" />
 
     <TextView
         android:id="@+id/textViewResultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="188dp"
+        android:fontFamily="serif-monospace"
         android:textColor="#3D5869"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewCalculadora"
-        app:layout_constraintVertical_bias="0.256"
+        app:layout_constraintVertical_bias="0.005"
         tools:text="Resultado" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="86dp"
+        android:layout_height="76dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.048"
+        app:srcCompat="@drawable/calculadora" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="20dp"
+        android:layout_height="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.708"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.945"
+        app:srcCompat="@drawable/volver" />
 </androidx.constraintlayout.widget.ConstraintLayout>

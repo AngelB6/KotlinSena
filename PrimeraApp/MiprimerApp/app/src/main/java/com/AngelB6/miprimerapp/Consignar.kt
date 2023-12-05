@@ -17,9 +17,10 @@ class Consignar : AppCompatActivity() {
         val buttonVolver = findViewById<Button>(R.id.buttonVolver)
 
         buttonEnviar.setOnClickListener{
-            var consignaccion = textSaldo.text.toString().toLong()
-            if (consignaccion != null){
-                var saldoFinal = AuxiliarSaldo.obtenerSaldo() + consignaccion
+            var consignacionString = textSaldo.text.toString()
+            if (consignacionString.isNotEmpty()){
+                var consignacionFinal = consignacionString.toLong()
+                var saldoFinal = AuxiliarSaldo.obtenerSaldo() + consignacionFinal
                 AuxiliarSaldo.nuevoSaldo(saldoFinal)
                 Toast.makeText(this, "Trasnferencia realizada:))", Toast.LENGTH_LONG).show()
                 var volverMenuNequi = Intent(this, MenuNequi::class.java)

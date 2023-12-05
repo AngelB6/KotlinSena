@@ -8,24 +8,12 @@
     android:background="#9B82B1"
     tools:context=".Saldo">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.165"
-        app:srcCompat="@drawable/logo_nequi" />
-
     <TextView
         android:id="@+id/textViewSaldo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-medium"
-        android:text="Ingrese Saldo A Recargar"
+        android:text="Ingrese el saldo a recargar"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,7 +28,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:fontFamily="sans-serif-light"
-        android:hint="Saldo"
+        android:hint="Ingrese su saldo..."
         android:inputType="number"
         android:textColorHint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -52,7 +40,7 @@
 
     <Button
         android:id="@+id/buttonSalir"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"
         android:text="Salir"
@@ -65,7 +53,7 @@
 
     <Button
         android:id="@+id/buttonRecargar"
-        android:layout_width="wrap_content"
+        android:layout_width="110dp"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"
         android:text="Recargar"
@@ -82,7 +70,7 @@
         android:layout_height="89dp"
         android:fontFamily="sans-serif-black"
         android:gravity="center"
-        android:text="Nequi"
+        android:text="Saldo"
         android:textColor="#FFFFFF"
         android:textSize="60dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -90,4 +78,39 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.052" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="303dp"
+        android:layout_height="202dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.307"
+        app:srcCompat="@drawable/ar2" />
+
+    <ImageView
+        android:id="@+id/imageView24"
+        android:layout_width="26dp"
+        android:layout_height="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.225"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.784"
+        app:srcCompat="@drawable/saldo" />
+
+    <ImageView
+        android:id="@+id/imageView25"
+        android:layout_width="26dp"
+        android:layout_height="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.581"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.784"
+        app:srcCompat="@drawable/cerrar_sesion" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -24,9 +24,9 @@ class AdivinaNum : AppCompatActivity() {
             val numeroFinal = numeroIng.text.toString()
             println(numeroGenerado)
             if (!numeroFinal.isNullOrEmpty()){
-                if (numeroFinal.toInt() < numeroGenerado && numeroFinal.toInt() < 20){
+                if (numeroFinal.toInt() < numeroGenerado && numeroFinal.toInt() <= 20){
                     mostrarRe.setText("Es mayor a ${numeroFinal.toString()}")
-                }else if(numeroFinal.toInt() > numeroGenerado && numeroFinal.toInt() < 20){
+                }else if(numeroFinal.toInt() > numeroGenerado && numeroFinal.toInt() <= 20){
                     mostrarRe.setText("Es menor a ${numeroFinal.toString()}")
                 }else if(numeroFinal.toInt() === numeroGenerado){
                     mostrarRe.setText("Correcto, ${numeroFinal.toString()} es el numero. Felicidades!")

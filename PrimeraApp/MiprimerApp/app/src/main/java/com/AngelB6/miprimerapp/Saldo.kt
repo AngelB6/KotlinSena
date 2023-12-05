@@ -18,9 +18,10 @@ class Saldo : AppCompatActivity() {
         val editTextSaldo = findViewById<EditText>(R.id.editTextSaldo)
 
         buttonRecarga.setOnClickListener{
-            var saldoFinal = editTextSaldo.text.toString().toLong()
-            AuxiliarSaldo.nuevoSaldo(saldoFinal)
-            if (saldoFinal != null){
+            var saldoString = editTextSaldo.text.toString()
+            if (saldoString.isNotEmpty()){
+                val saldoFinal = saldoString.toLong()
+                AuxiliarSaldo.nuevoSaldo(saldoFinal)
                 Toast.makeText(this, "Saldo recargado con exito",Toast.LENGTH_LONG).show()
                 val ingresoMenu = Intent(this, MenuNequi::class.java)
                 ingresoMenu.putExtra("variable", saldoFinal)
