@@ -5,7 +5,7 @@
     android:id="@+id/Calculadora"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondogeneral"
+    android:background="@drawable/fondo_app"
     tools:context=".Calculadora">
 
     <Button
@@ -135,7 +135,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.667"
-        app:srcCompat="@drawable/sumar" />
+        app:srcCompat="@drawable/icon_sumar" />
 
     <Button
         android:id="@+id/buttonDividir"
@@ -162,7 +162,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.774"
-        app:srcCompat="@drawable/dividir" />
+        app:srcCompat="@drawable/icon_dividir" />
 
     <Button
         android:id="@+id/buttonMultiplicar"
@@ -189,7 +189,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.774"
-        app:srcCompat="@drawable/multiplicar" />
+        app:srcCompat="@drawable/icon_multiplicar" />
 
     <Button
         android:id="@+id/buttonRestar"
@@ -217,7 +217,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.667"
-        app:srcCompat="@drawable/restar" />
+        app:srcCompat="@drawable/icon_restar" />
 
     <TextView
         android:id="@+id/textViewResultado"
@@ -245,7 +245,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.048"
-        app:srcCompat="@drawable/calculadora" />
+        app:srcCompat="@drawable/logo_icon_calculadora" />
 
     <ImageView
         android:id="@+id/imageView20"
@@ -257,5 +257,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.945"
-        app:srcCompat="@drawable/volver" />
+        app:srcCompat="@drawable/icon_volver_general" />
 </androidx.constraintlayout.widget.ConstraintLayout>

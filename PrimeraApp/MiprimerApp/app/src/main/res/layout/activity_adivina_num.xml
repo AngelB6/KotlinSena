@@ -5,7 +5,7 @@
     android:id="@+id/AdivinaNum"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondogeneral"
+    android:background="@drawable/fondo_app"
     tools:context=".AdivinaNum">
 
     <TextView
@@ -46,7 +46,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.678"
-        app:srcCompat="@drawable/volver" />
+        app:srcCompat="@drawable/icon_volver_general" />
 
     <Button
         android:id="@+id/buttonAdivinar"
@@ -103,7 +103,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.027"
-        app:srcCompat="@drawable/num" />
+        app:srcCompat="@drawable/logo_num" />
 
     <ImageView
         android:id="@+id/imageView42"
@@ -115,6 +115,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.678"
-        app:srcCompat="@drawable/adivinar" />
+        app:srcCompat="@drawable/icon_adivinar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

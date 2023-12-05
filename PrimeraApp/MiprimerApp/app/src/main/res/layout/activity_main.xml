@@ -5,7 +5,7 @@
     android:id="@+id/Main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondogeneral"
+    android:background="@drawable/fondo_app"
     android:outlineAmbientShadowColor="#FF0000"
     android:outlineSpotShadowColor="#FF0000"
     tools:context=".MainActivity">
@@ -37,7 +37,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.588"
-        app:srcCompat="@drawable/saludo" />
+        app:srcCompat="@drawable/icon_saludo" />
 
     <TextView
         android:id="@+id/textViewBienvenida"
@@ -100,7 +100,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.312"
-        app:srcCompat="@drawable/bienvenido" />
+        app:srcCompat="@drawable/icon_bienvenido" />
 
     <ImageView
         android:id="@+id/imageView12"
@@ -112,6 +112,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.684"
-        app:srcCompat="@drawable/salir" />
+        app:srcCompat="@drawable/icon_salir_general" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

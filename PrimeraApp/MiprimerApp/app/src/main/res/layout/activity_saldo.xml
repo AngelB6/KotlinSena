@@ -88,7 +88,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.307"
-        app:srcCompat="@drawable/ar2" />
+        app:srcCompat="@drawable/logo_ar" />
 
     <ImageView
         android:id="@+id/imageView24"
@@ -100,7 +100,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.784"
-        app:srcCompat="@drawable/saldo" />
+        app:srcCompat="@drawable/icon_saldo" />
 
     <ImageView
         android:id="@+id/imageView25"
@@ -112,5 +112,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.784"
-        app:srcCompat="@drawable/cerrar_sesion" />
+        app:srcCompat="@drawable/icon_cerrar_sesion" />
 </androidx.constraintlayout.widget.ConstraintLayout>
