@@ -16,16 +16,21 @@ class Retirar : AppCompatActivity() {
         val buttonRetirar = findViewById<Button>(R.id.buttonRetirar)
         val buttonVolver = findViewById<Button>(R.id.buttonVolver)
 
-        buttonRetirar.setOnClickListener{
-            var retiro = textRetValor.text.toString().toLong()
-            if (retiro != null && retiro <= AuxiliarSaldo.obtenerSaldo()){
-                var saldoFinal = AuxiliarSaldo.obtenerSaldo() - retiro
-                AuxiliarSaldo.nuevoSaldo(saldoFinal)
-                Toast.makeText(this, "Trasnferencia realizada:))", Toast.LENGTH_LONG).show()
-                var volverMenuNequi = Intent(this, MenuNequi::class.java)
-                startActivity(volverMenuNequi)
+        buttonRetirar.setOnClickListener {
+            var retiroString = textRetValor.text.toString()
+            if (retiroString.isNotEmpty()) {
+                val retiroFinal = retiroString.toLong()
+                if (retiroFinal <= AuxiliarSaldo.obtenerSaldo()) {
+                    var saldoFinal = AuxiliarSaldo.obtenerSaldo() - retiroFinal
+                    AuxiliarSaldo.nuevoSaldo(saldoFinal)
+                    Toast.makeText(this, "Trasnferencia realizada:))", Toast.LENGTH_LONG).show()
+                    var volverMenuNequi = Intent(this, MenuNequi::class.java)
+                    startActivity(volverMenuNequi)
+                }else{
+                    Toast.makeText(this, "No cuenta con saldo suficiente", Toast.LENGTH_LONG).show()
+                }
             }else{
-                Toast.makeText(this, "No cuenta con saldo suficiente", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Debe ingresar un valor valido", Toast.LENGTH_LONG).show()
             }
         }
 

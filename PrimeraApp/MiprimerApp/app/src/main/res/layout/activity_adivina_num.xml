@@ -12,57 +12,55 @@
         android:id="@+id/textViewAdivinaNum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-black"
-        android:text="Adivina El Numero"
+        android:fontFamily="serif-monospace"
+        android:text="Adivina el numero"
         android:textColor="#3D5869"
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.196" />
-
-    <EditText
-        android:id="@+id/editTextNumberNum"
-        android:layout_width="228dp"
-        android:layout_height="48dp"
-        android:ems="10"
-        android:hint="Ingrese Un Numero (1 - 20)"
-        android:inputType="number"
-        android:textColor="#3D5869"
-        android:textColorHint="#3D5869"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewAdivinaNum"
-        app:layout_constraintVertical_bias="0.223" />
-
-    <Button
-        android:id="@+id/buttonAdivinar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#3D5869"
-        android:text="Adivinar"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumberNum"
-        app:layout_constraintVertical_bias="0.563" />
+        app:layout_constraintVertical_bias="0.271" />
 
     <Button
         android:id="@+id/buttonVolver"
-        android:layout_width="wrap_content"
+        android:layout_width="130dp"
         android:layout_height="wrap_content"
         android:backgroundTint="#3D5869"
         android:text="Volver"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.822"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumberNum"
-        app:layout_constraintVertical_bias="0.742" />
+        app:layout_constraintVertical_bias="0.417" />
+
+    <ImageView
+        android:id="@+id/imageView41"
+        android:layout_width="32dp"
+        android:layout_height="27dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.678"
+        app:srcCompat="@drawable/volver" />
+
+    <Button
+        android:id="@+id/buttonAdivinar"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#3D5869"
+        android:text="Adivinar"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.184"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberNum"
+        app:layout_constraintVertical_bias="0.417" />
 
     <TextView
         android:id="@+id/textViewMayorMenor"
@@ -76,7 +74,47 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumberNum"
-        app:layout_constraintVertical_bias="0.464"
+        app:layout_constraintVertical_bias="0.445"
         tools:text="Mayor/Menor" />
+
+    <EditText
+        android:id="@+id/editTextNumberNum"
+        android:layout_width="228dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="Ingrese un numero (1 - 20)"
+        android:inputType="number"
+        android:textColor="#3D5869"
+        android:textColorHint="#3D5869"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAdivinaNum"
+        app:layout_constraintVertical_bias="0.089" />
+
+    <ImageView
+        android:id="@+id/imageView40"
+        android:layout_width="192dp"
+        android:layout_height="157dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.027"
+        app:srcCompat="@drawable/num" />
+
+    <ImageView
+        android:id="@+id/imageView42"
+        android:layout_width="32dp"
+        android:layout_height="27dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.131"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.678"
+        app:srcCompat="@drawable/adivinar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
